@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+ <html>
+      <head>
+        
+        <title>LoGo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notes </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/owl.carousel.css">
+        <link rel="stylesheet" href="stylesheets/animate.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="stylesheets/responsive.css">
+                <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="">
+                <meta name="author" content="">
+                <link type="text/css" rel="stylesheet" href="/stylesheets/jquery.miniColors.css" />
+                <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.22/fabric.min.js"></script>
+  <script type="text/javascript" src="js/custom_tshirt.js"></script>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-minicolors/2.2.6/jquery.minicolors.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-minicolors/2.2.6/jquery.minicolors.css">
+
+   
+
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css">
+
+
+
+	 <style type="text/css">
+		 
+		  #d1{
+            display:inline-block;
+		  }
+
+
+         #d2{
+            display:inline-block;
+		  }
+
+
+         #d3{
+            display:inline-block;
+		  }
+
+		  #newbody {
+	        padding-top: 60px;	        
+	      }
+	      .color-preview {
+	      	border: 1px solid #CCC;
+	      	margin: 2px;
+	      	zoom: 1;
+	      	vertical-align: top;
+	      	display: inline-block;
+	      	cursor: pointer;
+	      	overflow: hidden;
+	      	width: 20px;
+	      	height: 20px;
+	      }
+           
+          #priceList {
+
+          	float: left;
+          }
+
+
+	      .rotate {  
+		    -webkit-transform:rotate(90deg);
+		    -moz-transform:rotate(90deg);
+		    -o-transform:rotate(90deg);
+		    /* filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5); */
+		    -ms-transform:rotate(90deg);		   
+		}		
+		.Arial{font-family:"Arial";}
+		.Helvetica{font-family:"Helvetica";}
+		.MyriadPro{font-family:"Myriad Pro";}
+		.Delicious{font-family:"Delicious";}
+		.Verdana{font-family:"Verdana";}
+		.Georgia{font-family:"Georgia";}
+		.Courier{font-family:"Courier";}
+		.ComicSansMS{font-family:"Comic Sans MS";}
+		.Impact{font-family:"Impact";}
+		.Monaco{font-family:"Monaco";}
+		.Optima{font-family:"Optima";}
+		.HoeflerText{font-family:"Hoefler Text";}
+		.Plaster{font-family:"Plaster";}
+		.Engagement{font-family:"Engagement";}
+
+	 </style>
+
+  
+    </head>
+
+
+
+
+
+
+
+
+
+
+
+
+      <body id="body">
+
+
+      <!-- 
+      Header start
+      ==================== -->
+      <div class="navbar-default navbar-fixed-top" id="navigation">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                        <img class="logo-1" src="assets/logo.png" alt="LOGO">
+                        <img class="logo-2" src="assets/logo.png" alt="LOGO">
+                  </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <nav class="collapse navbar-collapse" id="navbar">
+                  <ul class="nav navbar-nav navbar-right" id="top-nav">
+                      <li class="current"><a href="#body">Home</a></li>
+                      <li><a href="#about">About us</a></li>
+                      <li><a href="#service">Services</a></li>
+                      <li><a href="#contact">Contact</a></li>
+            <%     if(!currentUser)  {  %>
+
+                  <li> <a href="/login"> Login   </a> </li>
+                  <li> <a href="/register"> Sign Up </a> </li>
+                  
+           <%   } else {   %>
+                  
+                  <li><a href = "#"><%= currentUser.username %></a></li>
+                  <li><a href="/logout">LogOut</a></li>
+           <%     }       %>
+            
+                  </ul>
+              </nav><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </div>
+
+  
+  <div class="container">
+
+    <% if(error && error.length >0) { %>  
+      <div class="alert alert-danger" role="alert">
+   
+        <%= error %>
+    
+      </div>    
+
+     <% } %>
+
+
+    <% if(success && success.length > 0) { %>  
+      <div class="alert alert-success" role="alert">
+   
+        <%= success %>
+    
+      </div>    
+
+    <% } %>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div id="newbody" class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+     	
+
+ 
+    <div class="container">
+		<section id="typography">
+		  <div class="page-header">
+		    <h1>Customize T-Shirt</h1>
+		  </div>
+		
+		  <!-- Headings & Paragraph Copy -->
+		  <div class="row">			
+		    <div class="span3">
+		    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+				  <ul class="nav nav-tabs">
+				  	<li class="active"><a href="#tab1" data-toggle="tab">T-Shirt Options</a></li>				    
+				  </ul>
+				  <div class="tab-content">
+				     <div class="tab-pane active" id="tab1">
+					      <div class="well">
+                              
+				    		<div class="input-append">
+							  <input class="span2" id="text-string" type="text" placeholder="add text here..."><button id="add-text" class="btn glyphicon glyphicon-share-alt" title="Add text"><i class="icon-share-alt"></i></button>
+							  <hr>
+							</div>
+							<div id="avatarlist">
+					
+                                      	<img style="display: none; cursor:pointer;" class="img-polaroid" src="" id="image">
+                                 <input type="file" onchange="showImage.call(this)">
+                                  <script>
+	
+                                  	function showImage(){
+                                  		if(this.files && this.files[0]){
+                                  			var obj = new FileReader();
+                                  			obj.onload  = function(data){
+                                  				var image = document.getElementById("image");
+                                  
+                                  				image.src = data.target.result;
+                                  				image.style.display = "block";
+                                  			}
+                                  			obj.readAsDataURL(this.files[0]);
+                                  		}
+                                  	}
+                                  </script>
+
+     					   </div>
+ 							<ul class="nav">
+								<li id="d1" class="color-preview" title="White" style="background-color:#ffffff;"></li>
+								<li id="d1" class="color-preview" title="Dark Heather" style="background-color:#616161;"></li>
+								<li  id="d1"  class="color-preview" title="Gray" style="background-color:#f0f0f0;"></li>
+								<li  id="d1"  class="color-preview" title="Charcoal" style="background-color:#5b5b5b;"></li>
+								<li  id="d1"  class="color-preview" title="Black" style="background-color:#222222;"></li>
+								<li  id="d1"  class="color-preview" title="Heather Orange" style="background-color:#fc8d74;"></li>
+								<li  id="d2"  class="color-preview" title="Heather Dark Chocolate" style="background-color:#432d26;"></li>
+								<li  id="d2" class="color-preview" title="Salmon" style="background-color:#eead91;"></li>
+								<li id="d2" class="color-preview" title="Chesnut" style="background-color:#806355;"></li>
+								<li id="d2" class="color-preview" title="Dark Chocolate" style="background-color:#382d21;"></li>
+								<li id="d2" class="color-preview" title="Citrus Yellow" style="background-color:#faef93;"></li>
+								<li id="d2" class="color-preview" title="Avocado" style="background-color:#aeba5e;"></li>
+								<li id="d2" class="color-preview" title="Kiwi" style="background-color:#8aa140;"></li>
+								<li id="d3" class="color-preview" title="Irish Green" style="background-color:#1f6522;"></li>
+								<li id="d3" class="color-preview" title="Scrub Green" style="background-color:#13afa2;"></li>
+								<li id="d3" class="color-preview" title="Teal Ice" style="background-color:#b8d5d7;"></li>
+								<li id="d3" class="color-preview" title="Heather Sapphire" style="background-color:#15aeda;"></li>
+								<li id="d3" class="color-preview" title="Sky" style="background-color:#a5def8;"></li>
+								<li id="d3" class="color-preview" title="Antique Sapphire" style="background-color:#0f77c0;"></li>
+								<li id="d3" class="color-preview" title="Heather Navy" style="background-color:#3469b7;"></li>							
+								<li id="d3" class="color-preview" title="Cherry Red" style="background-color:#c50404;"></li>
+							</ul>
+						</div>			      
+				     </div>				   
+				  </div>
+				</div>				
+		    </div>		
+		    <div class="span6">		    
+		    		<div align="center" s id="d2"tyle="min-height: 32px;">
+		    			<div class="clearfix">
+							<div class="btn-group inline pull-left" id="texteditor" style="display:none">						  
+								<button id="font-family" class="btn dropdown-toggle" data-toggle="dropdown" title="Font Style"><i class="icon-font" style="width:19px;height:19px;"></i></button>		                      
+							    <ul class="dropdown-menu" role="menu" aria-labelledby="font-family-X">
+								    <li><a tabindex="-1" href="#" onclick="setFont('Arial');" class="Arial">Arial</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Helvetica');" class="Helvetica">Helvetica</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Myriad Pro');" class="MyriadPro">Myriad Pro</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Delicious');" class="Delicious">Delicious</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Verdana');" class="Verdana">Verdana</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Georgia');" class="Georgia">Georgia</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Courier');" class="Courier">Courier</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Comic Sans MS');" class="ComicSansMS">Comic Sans MS</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Impact');" class="Impact">Impact</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Monaco');" class="Monaco">Monaco</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Optima');" class="Optima">Optima</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Hoefler Text');" class="Hoefler Text">Hoefler Text</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Plaster');" class="Plaster">Plaster</a></li>
+								    <li><a tabindex="-1" href="#" onclick="setFont('Engagement');" class="Engagement">Engagement</a></li>
+				                </ul>
+				                <!-- 
+							    <button id="text-bold" class="btn" data-original-title="Bold"><img src="img/font_bold.png" height="" width=""></button>
+							    <button id="text-italic" class="btn" data-original-title="Italic"><img src="img/font_italic.png" height="" width=""></button>
+							    <button id="text-strike" class="btn" title="Strike" style=""><img src="img/font_strikethrough.png" height="" width=""></button>
+							 	<button id="text-underline" class="btn" title="Underline" style=""><img src="img/font_underline.png"></button> -->
+							 	<a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Color"><input type="hidden" id="text-fontcolor" class="color-picker" size="7" value="#000000"></a>
+						 		<a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Border Color"><input type="hidden" id="text-strokecolor" class="color-picker" size="7" value="#000000"></a>
+								<!--   - Background <input type="hidden" id="text-bgcolor" class="color-picker" size="7" value="#ffffff"> --->     	
+
+							</div>							  
+							<div class="pull-right" align="" id="imageeditor" style="display:none">
+							  <div class="btn-group">										      
+							         <button class="btn" id="bring-to-front" title="Bring to Front"><i class="icon-fast-backward rotate" style="height:19px;"></i></button>
+							      <button class="btn" id="send-to-back" title="Send to Back"><i class="icon-fast-forward rotate" style="height:19px;"></i></button>
+							      <button id="flip" type="button" class="btn" title="Show Back View"><span class="glyphicon glyphicon-refresh" style="height:19px;"></span></button>
+							      <button id="remove-selected" class="btn" title="Delete selected item"><span class="glyphicon glyphicon-trash" style="height:19px;"></span></button>
+							  </div>
+							</div>			  
+						</div>												
+					</div>		
+
+				<!--	EDITOR      	 -->				
+					<div id="shirtDiv" class="page" style="width: 530px; height: 630px; position: relative; background-color: rgb(255, 255, 255);">
+						<img id="tshirtFacing" src="img/crew_front.png"></img>
+						<div id="drawingArea" style="position: absolute;top: 100px;left: 160px;z-index: 10;width: 200px;height: 400px;">					
+							<canvas id="tcanvas" width=200 height="400" class="hover" style="-webkit-user-select: none;"></canvas>
+						</div>
+					</div>
+<!--					<div id="shirtBack" class="page" style="width: 530px; height: 630px; position: relative; background-color: rgb(255, 255, 255); display:none;">-->
+<!--						<img src="img/crew_back.png"></img>-->
+<!--						<div id="drawingArea" style="position: absolute;top: 100px;left: 160px;z-index: 10;width: 200px;height: 400px;">					-->
+<!--							<canvas id="backCanvas" width=200 height="400" class="hover" style="-webkit-user-select: none;"></canvas>-->
+<!--						</div>-->
+<!--					</div>						-->
+								
+				<!--	/EDITOR		-->
+		    </div>
+
+            <div id="priceList" class="span3 animated infinite bounce"" style="float: right; margin-top: -600px !important; position: relative;">
+		        Pick Any Design only at 300₹      		       		   
+		    </div>
+
+
+
+		  </div>
+		
+		</section>
+    </div><!-- /container -->
+    
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-minicolors/2.2.6/jquery.minicolors.js"></script>
+     </div>
+
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+
+ <form action="/customize" method = "POST">
+
+ <button type="submit">press</button>
+ </form>
+
+        <section clas="wow fadeInUp">
+          <div class="map-wrapper">
+          </div>
+        </section>
+
+         <button style="float: right; margin-top: -300px; margin-right: 200px;" onclick="report()">Take screenshot</button>
+    <div class="container">
+        <img width="75%" class="screen">
+    </div>
+
+
+    <script>
+        function report() {
+            let region = document.getElementById("body"); // whole screen
+            html2canvas(region, {
+                onrendered: function (canvas){
+                pngUrl = canvas.toDataURL();
+                img = document.querySelector(".screen");
+                img.src = pngUrl; 
+                },
+            });
+        }      
+    </script>
+
+ <form action="/customize/ %>" method = "POST" style="float: right; margin-top: -500px; margin-right: 150px;">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Select size</label>
+  <select name ="sel" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>Choose...</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+
+  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+    <input type="checkbox" class="custom-control-input" id="customControlInline">
+    <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+  </div>
+
+  <button type="submit" class="add-to-cart btn btn-default">Submit</button>
+</form>
+
+<% include  ../partials/footer %>

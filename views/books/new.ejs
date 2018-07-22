@@ -1,0 +1,40 @@
+<% include  ../partials/header %>
+
+<div class="container">
+    <div class="row">
+<h1 style="text-align: center;"> Enter details of Book </h1>
+        <div style="width: 30%; margin: 30px auto;">
+ <form action="/books" method = "POST">
+                        <div class="form-group">
+                              
+                                <input class="form-control" type = "text" name = "name" placeholder ="name"> 
+                        </div>
+
+                        <div class="form-group">
+                   
+                                <input class="form-control" type = "text" name = "writer" placeholder ="Price"> 
+                        </div>
+
+                        <div class="form-group">
+                                <input class="form-control" type = "text" name = "image" placeholder = "Image URL">
+                        </div>
+                      
+                      <div class="form-group">
+                                <input class="form-control" type = "text" name ="design" placeholder = "DESIGN URL">
+                      </div>
+                      
+  
+                      <div class="form-group">
+                               <textarea class="form-control" type="text" name="description" placeholder="description">
+                               </textarea>
+                      </div>
+
+                        <div class="form-group">
+                                 <button class="btn btn-default btn-lg showcase-btn btn-block"> Submit! </button>
+                        </div>
+ </form>
+   <a href="/books">Go back</a>
+       </div>
+    </div>
+</div>
+ <% include  ../partials/footer %>

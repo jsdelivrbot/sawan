@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+ <html>
+      <head>
+         <title>smerch </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notes </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/typer.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/owl.carousel.css">
+        <link rel="stylesheet" href="stylesheets/animate.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="stylesheets/responsive.css">
+      </head>
+
+  <body id="body">
+ <style type="text/css">
+  
+    @import url(http://weloveiconfonts.com/api/?family=entypo|zocial);
+    @import url(http://fonts.googleapis.com/css?family=Sintony);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #d6d7dc;
+  color: #fefefe;
+  -webkit-font-smoothing: antialiased;
+}
+
+i {
+  font-style: normal;
+}
+
+ul.social-links {
+  list-style: none;
+  width: 21.81818em;
+  margin: 2em auto;
+}
+ul.social-links .social-icon {
+  width: 4em;
+  height: 4em;
+  float: left;
+  margin: 1em 1.4em;
+  margin-left: 0;
+  border-radius: 100%;
+  box-shadow: 0 0.3em 0.25em rgba(0, 0, 0, 0.1);
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+ul.social-links .social-icon a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  transform: scale(1.15) translateZ(0);
+}
+ul.social-links .social-icon a:hover {
+  transform: scale(1.15) translateZ(0);
+}
+ul.social-links .social-icon a span {
+  display: block;
+  float: left;
+  width: 1em;
+  height: 4em;
+  overflow: hidden;
+  margin: 0;
+  line-height: 1.1;
+  padding: 0;
+  font-size: 1.4em;
+  position: relative;
+}
+ul.social-links .social-icon a span:nth-child(1) {
+  text-align: right;
+  position: absolute;
+}
+ul.social-links .social-icon a span:nth-child(1) i {
+  display: block;
+  margin-top: .55em;
+  margin-left: .35em;
+  color: #fff;
+}
+ul.social-links .social-icon a span:nth-child(2) {
+  text-align: left;
+  margin-left: 0em;
+  width: 40%;
+  position: relative;
+  margin: 0 0em 0 1em;
+  text-align: left;
+  z-index: 2;
+}
+ul.social-links .social-icon a span:nth-child(2) i {
+  margin-top: .55em;
+  margin-left: -.65em;
+  display: block;
+  color: #ccc;
+}
+ul.social-links .social-icon.twitter {
+  background-color: #00cdf8;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #00cdf8), color-stop(50%, #00bdda));
+  background-image: -webkit-linear-gradient(left, #00cdf8 50%, #00bdda 50%);
+  background-image: linear-gradient(to right,#00cdf8 50%, #00bdda 50%);
+}
+ul.social-links .social-icon.twitter a {
+  left: .74em;
+  top: .25em;
+}
+ul.social-links .social-icon.twitter span:nth-child(2) i {
+  color: #fef1e0;
+}
+ul.social-links .social-icon.facebook {
+  background-color: #6e8cca;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #6e8cca), color-stop(50%, #5389c9));
+  background-image: -webkit-linear-gradient(left, #6e8cca 50%, #5389c9 50%);
+  background-image: linear-gradient(to right,#6e8cca 50%, #5389c9 50%);
+}
+ul.social-links .social-icon.facebook a {
+  left: 1.09em;
+  top: .2em;
+}
+ul.social-links .social-icon.facebook span:nth-child(1) {
+  margin-left: -.25em;
+}
+ul.social-links .social-icon.facebook span:nth-child(2) {
+  margin-left: .74em;
+}
+ul.social-links .social-icon.facebook span:nth-child(2) i {
+  color: #c2ecf8;
+}
+ul.social-links .social-icon.dribbble {
+  background-color: #e6659d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #e6659d), color-stop(50%, #be639c));
+  background-image: -webkit-linear-gradient(left, #e6659d 50%, #be639c 50%);
+  background-image: linear-gradient(to right,#e6659d 50%, #be639c 50%);
+}
+ul.social-links .social-icon.dribbble a {
+  left: .80em;
+  top: .25em;
+}
+ul.social-links .social-icon.dribbble span:nth-child(1) {
+  margin-left: -.08em;
+}
+ul.social-links .social-icon.dribbble span:nth-child(2) {
+  margin-left: .92em;
+}
+ul.social-links .social-icon.dribbble span:nth-child(2) i {
+  color: #d9e9f8;
+}
+ul.social-links .social-icon.behance {
+  background-color: #07a2e5;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #07a2e5), color-stop(50%, #0395e2));
+  background-image: -webkit-linear-gradient(left, #07a2e5 50%, #0395e2 50%);
+  background-image: linear-gradient(to right,#07a2e5 50%, #0395e2 50%);
+}
+ul.social-links .social-icon.behance a {
+  left: .80em;
+  top: .25em;
+}
+ul.social-links .social-icon.behance span:nth-child(1) {
+  margin-left: -.06em;
+}
+ul.social-links .social-icon.behance span:nth-child(2) {
+  margin-left: .92em;
+}
+ul.social-links .social-icon.behance span:nth-child(2) i {
+  color: #75e3fe;
+}
+ul.social-links .social-icon.youtube {
+  background-color: #e23c48;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #e23c48), color-stop(50%, #b83c47));
+  background-image: -webkit-linear-gradient(left, #e23c48 50%, #b83c47 50%);
+  background-image: linear-gradient(to right,#e23c48 50%, #b83c47 50%);
+}
+ul.social-links .social-icon.youtube a {
+  left: .80em;
+  top: .15em;
+}
+ul.social-links .social-icon.youtube span:nth-child(1) {
+  margin-left: -.06em;
+}
+ul.social-links .social-icon.youtube span:nth-child(2) {
+  margin-left: .92em;
+}
+ul.social-links .social-icon.youtube span:nth-child(2) i {
+  color: #d1e5ec;
+}
+ul.social-links .social-icon.linkedin {
+  background-color: #4495c0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #4495c0), color-stop(50%, #447fa7));
+  background-image: -webkit-linear-gradient(left, #4495c0 50%, #447fa7 50%);
+  background-image: linear-gradient(to right,#4495c0 50%, #447fa7 50%);
+}
+ul.social-links .social-icon.linkedin a {
+  left: .80em;
+  top: .11em;
+}
+ul.social-links .social-icon.linkedin span:nth-child(1) {
+  margin-left: -.06em;
+}
+ul.social-links .social-icon.linkedin span:nth-child(2) {
+  margin-left: .92em;
+}
+ul.social-links .social-icon.linkedin span:nth-child(2) i {
+  color: #f4dbe1;
+}
+ul.social-links .social-icon.skype {
+  background-color: #00cff7;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #00cff7), color-stop(50%, #01c7f8));
+  background-image: -webkit-linear-gradient(left, #00cff7 50%, #01c7f8 50%);
+  background-image: linear-gradient(to right,#00cff7 50%, #01c7f8 50%);
+}
+ul.social-links .social-icon.skype a {
+  left: .80em;
+  top: .2em;
+}
+ul.social-links .social-icon.skype span:nth-child(1) {
+  margin-left: -.06em;
+}
+ul.social-links .social-icon.skype span:nth-child(2) {
+  margin-left: .92em;
+}
+ul.social-links .social-icon.skype span:nth-child(2) i {
+  color: #94f0ff;
+}
+ul.social-links .social-icon.pinterest {
+  background-color: #f34256;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f34256), color-stop(50%, #ca3f56));
+  background-image: -webkit-linear-gradient(left, #f34256 50%, #ca3f56 50%);
+  background-image: linear-gradient(to right,#f34256 50%, #ca3f56 50%);
+}
+ul.social-links .social-icon.pinterest a {
+  left: .80em;
+  top: .25em;
+}
+ul.social-links .social-icon.pinterest span:nth-child(1) {
+  margin-left: -.06em;
+}
+ul.social-links .social-icon.pinterest span:nth-child(2) {
+  margin-left: .92em;
+}
+ul.social-links .social-icon.pinterest span:nth-child(2) i {
+  color: #d9fbfd;
+}
+
+h1 {
+  font-weight: 300;
+  text-shadow: -0.05em 0.05em #d6d7dc, -0.08em 0.08em #95a5a6;
+  color: #34495e;
+  width: 100%;
+  height: 2em;
+  float: left;
+  text-align: center;
+  font-family: "Sintony", Helvetica, sans-serif;
+}
+
+.mention {
+  width: 100%;
+  height: 2em;
+  float: left;
+  text-align: center;
+  font-family: "Sintony", Helvetica, sans-serif;
+}
+.mention h3, .mention h1 {
+  width: 60%;
+  display: block;
+  margin: 2em auto;
+  font-weight: 300;
+  text-shadow: -0.1em 0.1em #d6d7dc, -0.11em 0.11em #95a5a6;
+  color: #34495e;
+}
+.mention h3 a, .mention h1 a {
+  color: #2980b9;
+}
+
+.social-links:hover .social-icon:not(:hover) {
+  opacity: 0.6;
+}
+
+ </style>
+      <!-- 
+      Header start
+      ==================== -->
+      <div class="navbar-default navbar-fixed-top" id="navigation">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                        <img class="logo-1" src="assets/logo.png" alt="LOGO">
+                        <img class="logo-2" src="assets/logo.png" alt="LOGO">
+                      
+                      </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <nav class="collapse navbar-collapse" id="navbar">
+                  <ul class="nav navbar-nav navbar-right" id="top-nav">
+                      <li class="current"><a href="#body">Home</a></li>
+                      <li><a href="#about">About us</a></li>
+                      <li><a href="#service">Services</a></li>
+                      <li><a href="#contact">Contact</a></li>
+            <%     if(!currentUser)  {  %>
+
+                  <li> <a href="/login"> Login   </a> </li>
+                  <li> <a href="/register"> Sign Up </a> </li>
+                  
+           <%   } else {   %>
+                  
+                  <li><a href = "#"><%= currentUser.username %></a></li>
+                  <li><a href="/logout">LogOut</a></li>
+           <%     }       %>
+            
+                  </ul>
+              </nav><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </div>
+
+  
+  <div class="container">
+
+    <% if(error && error.length >0) { %>  
+      <div class="alert alert-danger" role="alert">
+   
+        <%= error %>
+    
+      </div>    
+
+     <% } %>
+
+
+    <% if(success && success.length > 0) { %>  
+      <div class="alert alert-success" role="alert">
+   
+        <%= success %>
+    
+      </div>    
+
+    <% } %>
+
+  </div>
+
+
+
+      <section id="hero-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="block">
+                          <h1 class="wow fadeInDown" style="font-size: 30px;">High Quality T-shirts</h1>
+                          <span class="typer" id="main" data-words="great,fun,lightweight,easy" data-colors="white" data-delay="100" data-deleteDelay="1000"></span>
+                          <p class="wow fadeInDown" data-wow-delay="0.3s">we offers high quality tshirts at vey affordable price. you can custumize your own tshirt or you can also choose from our designs :)</p>
+                          <div class="wow fadeInDown" data-wow-delay="0.3s">
+                            <a class="btn btn-default btn-home" href="/books" role="button">Our Collection</a>
+
+                            <a class="btn btn-default btn-home" href="/customize" role="button">Customize your own</a>
+                          </div>
+                      </div>
+                  </div>  
+                </div>
+              </div><!-- .row close -->
+          </div><!-- .container close -->
+      </section><!-- header close -->
+
+
+
+        <!-- 
+        About start
+        ==================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 wow fadeInLeft">
+                      <div class="sub-heading">
+                        <h3>T-shirt printing is an art form, and nothing makes us happier than creating your masterpiece. We’ve assembled an amazing team of the world’s best and brightest designers, printers and project specialists who are available 7 days a week to make sure even the most complicated order is a breeze.</h3>
+                      </div>
+                        <div class="block">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="about-slider">
+                          <div class="init-slider">
+                            <div class="about-item">
+                              <img src="images/about/1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="about-item">
+                              <img src="images/about/2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="about-item">
+                              <img src="images/about/3.jpg" alt="" class="img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #about close -->
+        <!-- 
+        About start
+        ==================== -->
+
+        <!-- 
+        Service start
+        ==================== -->
+        <section id="service" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="heading wow fadeInUp">
+                        <h2>Our service</h2>
+                        <p>Choose custom t-shirts in all styles and colors at the best possible prices. Find the perfect custom t-shirt for your events, meetings, schools, universities, and promotional events.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 wow fadeInLeft">
+                        <div class="service">
+                            <div class="icon-box">
+                              <span class="icon">
+                                    <i class="ion-android-desktop"></i>   
+                                </span>
+                            </div>
+                            <div class="caption">
+                                <h3>Pick a Product</h3>
+                                <p>We have hundreds of products to choose from in our catalog. We have apparel available in sizes from infants to adults.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="service">
+                            <div class="icon-box">
+                              <span class="icon">
+                                    <i class="ion-speedometer"></i>   
+                                </span>
+                            </div>
+                            <div class="caption">
+                              <h3>Design Your Apparel</h3>
+                                <p>Create a custom design using our templates or clipart. Already have a design? Upload it in our Design Studio and place it on the garment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="service">
+                            <div class="icon-box">
+                              <span class="icon">
+                                    <i class="ion-ios-infinite-outline"></i>   
+                                </span>
+                            </div>
+                            <div class="caption">
+                                <h3>Checkout</h3>
+                                <p>The only thing left to do is select a delivery date for your custom apparel. Our rush deliveries guarantee you’ll get your order on time.</p>
+                            </div>
+                        </div>
+                    </div>
+                                </div><!-- .container close -->
+        </section><!-- #service close -->
+
+        <section id="call-to-action" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow text-center">
+                        <div class="block">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Your Email Address">
+                                <button class="btn btn-default btn-submit" type="submit">Get Notified</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #call-to-action close -->
+
+        <!-- 
+        Contact start
+        ==================== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="block">
+                            <div class="heading wow fadeInUp">
+                                <h2>Get In Touch</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 wow fadeInUp">
+            <div class="block text-left">
+              <div class="sub-heading">
+                <h4>Contact Address</h4>
+              </div>
+              <address class="address">
+                                <hr>
+                <p>shastri nagar,<br> phase 2, bahadurgarh<br>india</p>
+                                <hr>
+                                <p><strong>E:</strong>&nbsp;hello@foundry.net<br>
+                                <strong>P:</strong>&nbsp;+91 8053131676</p>
+                
+                                
+              </address>
+            </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="form-group">
+                          <form action="#" method="post" id="contact-form">
+                              <div class="input-field">
+                                  <input type="text" class="form-control" placeholder="Your Name" name="name">
+                              </div>
+                              <div class="input-field">
+                                  <input type="email" class="form-control" placeholder="Email Address" name="email">
+                              </div>
+                              <div class="input-field">
+                                  <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
+                              </div>
+                              <button class="btn btn-send" type="submit">Send me</button>
+                          </form>
+
+                          <div id="success">
+                              <p>Your Message was sent successfully</p>
+                          </div>
+                          <div id="error">
+                              <p>Your Message was not sent successfully</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section clas="wow fadeInUp">
+          <div class="map-wrapper">
+          </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.743641182457!2d72.84318501490053!3d19.031014887113706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ced3f9cfa341%3A0xe1d4f594937ee263!2sHotel+Ganga+Vihar!5e0!3m2!1sen!2sin!4v1529400875252" width="1150" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-12">
+                        <ul class="social-links">
+                          <li class="social-icon twitter">
+                            <a href="https://twitter.com/smerch58387121">
+                              <span><i><span class="ico entypo-twitter"></span></i></span>
+                              <span><i><span class="ico entypo-twitter"></span></i></span>
+                            </a>
+                          </li>
+                          <li class="social-icon facebook">
+                            <a href="https://www.facebook.com/Ofiicalsmerch-2100162413554334/"><span><i><span class="ico entypo-facebook"></span></i></span><span><i><span class="ico entypo-facebook"></span></i></span></a>
+                          </li>
+                        </ul>
+                </div>
+                    <div class="col-md-12">
+                        <div class="block">
+
+                            <p>Copyright  <a href=""></a>| All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="js/jquery.lwtCountdown-1.0.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
